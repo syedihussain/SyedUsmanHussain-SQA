@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#07111f">
+  <meta name="description" content="Syed Usman Hussain - SQA Engineer | Manual & Automation Testing | Selenium (C#)">
+  <title>Syed Usman Hussain | SQA Engineer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="loading">
+
+  <!-- Intro: canvas se bana, vector hai isliye har screen par HD -->
+  <div id="intro" aria-hidden="true">
+    <canvas id="introCanvas"></canvas>
+    <div class="intro-hud">
+      <div class="hud-line"><span id="hudLabel">Running suite</span><span id="hudCount">0 / 1,284</span></div>
+      <div class="hud-bar"><i id="hudFill"></i></div>
+      <div class="hud-log" id="hudLog">&nbsp;</div>
+    </div>
+    <div class="intro-name" id="introName">
+      <p>Syed Usman Hussain</p>
+      <span>SQA Engineer</span>
+    </div>
+    <button class="skip-intro" id="skipIntro" type="button">Skip intro</button>
+  </div>
+
+  <header class="nav" id="nav">
+    <a href="#home" class="logo" aria-label="Home">SUH<b>.</b></a>
+    <a href="mailto:usmanh1999.uh@gmail.com" class="nav-mail">usmanh1999.uh@gmail.com</a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="menu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#work">Work</a>
+      <a href="#contact">Contact</a>
+      <a href="mailto:usmanh1999.uh@gmail.com" class="menu-mail">usmanh1999.uh@gmail.com</a>
+    </nav>
+  </header>
+
+  <aside class="social" id="social">
+    <a href="https://www.linkedin.com/in/syed-usman-hussain-sqa-engineer" target="_blank" rel="noopener" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.75h4v11.5H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.82-2.05 3.75-2.05 4 0 4.74 2.63 4.74 6.05v5.9h-4v-5.23c0-1.25-.02-2.85-1.74-2.85-1.74 0-2 1.36-2 2.76v5.32h-4z"/></svg>
+    </a>
+    <a href="https://github.com/" target="_blank" rel="noopener" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.41c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a10.9 10.9 0 0 1 5.78 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.42-2.69 5.39-5.25 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5z"/></svg>
+    </a>
+  </aside>
+
+  <main>
+  <section id="home" class="hero">
+    <canvas id="heroCanvas" aria-hidden="true"></canvas>
+    <div class="hero-left">
+      <p class="hello">Hello, I'm</p>
+      <h1>Syed Usman<br>Hussain</h1>
+    </div>
+    <div class="hero-center">
+      <div class="spotlight"></div>
+      <img src="me.png" alt="Syed Usman Hussain" class="avatar" width="720" height="900" onerror="this.style.display='none'">
+    </div>
+    <div class="hero-right">
+      <p class="role-lead">A detail-driven</p>
+      <h2>SQA<br>Engineer</h2>
+      <p class="status"><i></i>All checks passing</p>
+      <a href="#about" class="scroll-btn">Scroll down ↓</a>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="wrap">
+      <h2 class="title reveal">I make quality certain, <span>from start to finish.</span></h2>
+      <div class="about-grid">
+        <div class="reveal">
+          <p>I'm Syed Usman Hussain, an SQA Engineer focused on manual and automation testing. I read requirements closely, design test cases that catch real problems, and automate repeatable checks with Selenium (C#) so releases stay fast and reliable.</p>
+          <p>My goal is simple: find defects early, report them clearly, and help the team ship software people can trust.</p>
+          <ul class="focus">
+            <li><b>Manual Testing</b><span>Functional, regression, smoke, exploratory</span></li>
+            <li><b>Test Automation</b><span>Selenium WebDriver with C#</span></li>
+            <li><b>Test Design</b><span>Test cases, scenarios, traceability</span></li>
+            <li><b>Defect Reporting</b><span>Clear steps, evidence, severity</span></li>
+          </ul>
+        </div>
+        <figure class="bug reveal" aria-label="Sample defect report">
+          <figcaption><span>Sample defect report</span><em>Severity: High</em></figcaption>
+          <dl>
+            <dt>Title</dt><dd>Checkout total ignores discount code after page refresh</dd>
+            <dt>Steps</dt><dd>1. Add item to cart<br>2. Apply code SAVE10<br>3. Refresh the page</dd>
+            <dt>Expected</dt><dd>Total stays at 10% off</dd>
+            <dt>Actual</dt><dd class="bad">Full price shown, code still marked "applied"</dd>
+            <dt>Evidence</dt><dd>Screen recording + network log attached</dd>
+          </dl>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section alt">
+    <div class="wrap">
+      <h2 class="title reveal">Tools &amp; <span>expertise</span></h2>
+      <div class="skills">
+        <article class="card reveal">
+          <h3>Testing</h3>
+          <div class="chips"><span>Functional Testing</span><span>Regression</span><span>Smoke &amp; Sanity</span><span>Exploratory</span><span>UAT Support</span><span>Cross-Browser</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Automation</h3>
+          <div class="chips"><span>Selenium WebDriver</span><span>C#</span><span>NUnit</span><span>Page Object Model</span><span>Git</span></div>
+        </article>
+        <article class="card reveal">
+          <h3>Process &amp; Tools</h3>
+          <div class="chips"><span>SDLC / STLC</span><span>Agile / Scrum</span><span>Jira</span><span>Postman (API)</span><span>Test Case Management</span></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="work" class="section">
+    <div class="wrap">
+      <h2 class="title reveal">Selected <span>projects</span></h2>
+      <div class="projects">
+        <!-- Apne asli projects yahan likhein: title, description, tags, link -->
+        <article class="project featured reveal">
+          <div class="feat-text">
+            <div class="p-top"><span class="p-tag">AI + Automation</span><span class="p-status">IN PROGRESS</span></div>
+            <h3>SQA AI Agent</h3>
+            <p class="feat-lead">An agent that scans a website and generates test cases with AI. Built in C# with Selenium and MSTest.</p>
+            <p>The lesson so far: the AI is only as good as what it can see. If the page information is incomplete, the generated test cases are incomplete, and no prompt can fix that. So I'm reworking the discovery part:</p>
+            <ul class="feat-list">
+              <li>Reads the whole menu, including collapsed sections and hidden sidebar links</li>
+              <li>Names pages from menu text and headings instead of the browser title</li>
+              <li>Detects icon-only buttons (view, edit, add) from their class, title and aria-label</li>
+              <li>Lets the user pick a page by name from a searchable list</li>
+              <li>Clicks only Create, Update and View controls, never Delete or Save</li>
+            </ul>
+            <div class="chips small"><span>C#</span><span>Selenium</span><span>MSTest</span><span>AI test generation</span></div>
+          </div>
+          <figure class="feat-shot">
+            <img src="ai-agent.jpg" alt="SQA AI Agent start screen asking for a website URL" width="800" height="383" loading="lazy">
+            <figcaption>The agent's start screen in Visual Studio</figcaption>
+          </figure>
+        </article>
+        <article class="project reveal">
+          <div class="p-top"><span class="p-tag">Automation</span><span class="p-status">PASS</span></div>
+          <h3>Web Test Automation Framework</h3>
+          <p>Selenium + C# framework using Page Object Model for stable, reusable UI tests with clear reporting.</p>
+          <div class="chips small"><span>Selenium</span><span>C#</span><span>NUnit</span></div>
+          <a href="#contact" class="p-link">View details →</a>
+        </article>
+        <article class="project reveal">
+          <div class="p-top"><span class="p-tag">Manual</span><span class="p-status">PASS</span></div>
+          <h3>End-to-End Test Suite</h3>
+          <p>Complete test plan, test cases and regression pack covering critical user flows and edge cases.</p>
+          <div class="chips small"><span>Test Cases</span><span>Regression</span><span>Jira</span></div>
+          <a href="#contact" class="p-link">View details →</a>
+        </article>
+        <article class="project reveal">
+          <div class="p-top"><span class="p-tag">API</span><span class="p-status">PASS</span></div>
+          <h3>API Validation Collection</h3>
+          <p>Postman collections validating status codes, payloads and error handling across key endpoints.</p>
+          <div class="chips small"><span>Postman</span><span>REST</span><span>JSON</span></div>
+          <a href="#contact" class="p-link">View details →</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="wrap narrow">
+      <h2 class="title reveal">Let's work <span>together</span></h2>
+      <p class="lead reveal">Looking for a detail-driven QA engineer? Send me a message.</p>
+      <form class="form reveal" id="contactForm">
+        <input type="text" id="fName" placeholder="Your name" required autocomplete="name">
+        <input type="email" id="fEmail" placeholder="Your email" required autocomplete="email">
+        <textarea id="fMsg" rows="5" placeholder="Your message" required></textarea>
+        <button type="submit" class="btn">Open in email app</button>
+      </form>
+      <div class="contact-links reveal">
+        <a href="mailto:usmanh1999.uh@gmail.com" id="mailText">usmanh1999.uh@gmail.com</a>
+        <button type="button" class="copy" id="copyMail">Copy email</button>
+        <a href="https://www.linkedin.com/in/syed-usman-hussain-sqa-engineer" target="_blank" rel="noopener">Syed Usman Hussain on LinkedIn</a>
+      </div>
+    </div>
+  </section>
+  </main>
+
+  <footer class="footer">© <span id="year"></span> Syed Usman Hussain · SQA Engineer</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
